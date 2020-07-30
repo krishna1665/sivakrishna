@@ -1,0 +1,32 @@
+body {
+    background-color: #fff;
+}
+
+a.border.nav-link.border-dark.rounded.mr-1 {
+    color: #ef729B;
+}
+
+a.border.nav-link.bordder-light.rounded.mr-1:hover {
+    color: #1c2331;
+}
+
+.btn.btn-sm.indigo:hover {
+    color: #fff;
+}
+
+.nav-link.active{ background-color: rgba(255, 255, 255, 0.1); }
+.categories > .col-md-4.mb-5 { margin-bottom: 8rem !important; }
+.sectionPage { position: relative;  margin-bottom: -125px; height: 200px;}
+.sectionPage::after{ 
+    content: '';
+    height: 10%;
+    width: 100%;
+    background-color: "#2f3d5e";
+    position: absolute;
+    background-size: cover;
+    filter: opacity(.1);
+} 
+
+#btnColor {
+    background-color: #2f3d5e !important;
+}
