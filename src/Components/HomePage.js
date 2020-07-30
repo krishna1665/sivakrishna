@@ -33,7 +33,20 @@ class HomePage extends Component {
     }
 
     componentWillReceiveProps() {
-       
+        if(myMSALObj.getAccount()) {
+            this.setState({
+                login: true,
+                admin: this.props.authData.admin,
+                userData: myMSALObj.getAccount()
+            })
+        } else {
+            this.setState({
+                login: false,
+                admin: this.props.authData.admin,
+                userData: null
+            })
+        }
+    }
 
     
 
